@@ -2,6 +2,10 @@ import time
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 import requests
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "grofers.settings")
+import django
+django.setup()
 
 file_path = '/home/bharat/file/'
 
